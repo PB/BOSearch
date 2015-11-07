@@ -11,6 +11,8 @@ gem 'bootstrap-sass'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'pg'
+gem 'squeel'
+gem 'awesome_print'
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
@@ -22,6 +24,7 @@ group :development do
   gem 'rack-mini-profiler', require: false
   gem 'bullet'
   gem 'rubocop', require: false
+  gem 'meta_request'
 end
 group :development, :test do
   gem 'factory_girl_rails'
