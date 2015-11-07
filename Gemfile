@@ -19,6 +19,9 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'spring-commands-rspec'
+  gem 'rack-mini-profiler', require: false
+  gem 'bullet'
+  gem 'rubocop', require: false
 end
 group :development, :test do
   gem 'factory_girl_rails'
