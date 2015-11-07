@@ -13,7 +13,7 @@ countries = Country.create([{ name: 'Poland' },
 
 cities = City.create([{ name: 'Warszawa' },
                       { name: 'Gdańsk' },
-                      { name: 'Zakopane'},
+                      { name: 'Zakopane' },
                       { name: 'Barcelona' },
                       { name: 'New York' },
                       { name: 'Athens' },
