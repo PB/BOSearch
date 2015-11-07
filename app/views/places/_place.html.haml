@@ -1,0 +1,15 @@
+.list-group-item
+  %h4.list-group-item-heading
+    = place.name
+  .list-group-item-text
+    .country
+      Country:
+      = place.country.name
+      .city
+        City:
+        = place.city.name
+      .duration
+        Duration:
+        = place.begins_at
+        \-
+        = place.ends_at
