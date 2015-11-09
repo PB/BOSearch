@@ -16,6 +16,13 @@ Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.
 Getting Started
 ---------------
 
+Steps:
+
+* bundle install
+* configure database access
+* rake db:setup
+* rails s
+
 Documentation and Support
 -------------------------
 
