@@ -35,7 +35,9 @@ group :production do
   gem 'rails_12factor'
 end
 group :test do
+  gem 'shoulda-matchers'
   gem 'capybara'
+  gem 'capybara-webkit'
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
