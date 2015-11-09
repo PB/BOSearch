@@ -1,0 +1,17 @@
+=form_tag(root_path, remote: :true, class: 'form-inline') do
+  .form-group
+    %label{for: 'q'} Search
+    =text_field_tag 'q', '', class: 'form-control'
+  .form-group
+    %label{for: 'min'} Min
+    =number_field_tag 'min', '', class: 'form-control'
+  .form-group
+    %label{for: 'max'} Max
+    =number_field_tag 'max', '', class: 'form-control'
+  .form-group
+    %label{for: 'from'} From
+    =date_field_tag 'from', '', class: 'form-control'
+  .form-group
+    %label{for: 'to'} To
+    =date_field_tag 'to', '', class: 'form-control'
+  =button_tag 'Search' , class: 'btn btn-default' , type: :submit
