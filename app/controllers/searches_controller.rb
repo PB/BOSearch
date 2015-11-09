@@ -24,13 +24,13 @@ class SearchesController < ApplicationController
   end
 
   def country_city_search
-    false if params[:q].blank?
+    return false if params[:q].blank?
     q = params[:q]
     @places = @places.joins { [:country, :city] }.where { sift :country_or_city_contains, q }
   end
 
   def date_search
-    false if check_date_params
+    return false if check_date_params
     min_date = count_date
     end_date = params[:to]
     @places = @places.where { ends_at.gteq(min_date) & begins_at.lteq(end_date) }
