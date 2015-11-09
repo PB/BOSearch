@@ -10,6 +10,8 @@
         = place.city_name
       .duration
         Duration:
-        = place.begins_at
+        %span.begins
+          = place.begins_at
         \-
-        = place.ends_at
+        %span.ends
+          = place.ends_at

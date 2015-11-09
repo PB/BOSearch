@@ -1,12 +1,19 @@
 ready = ->
   $(".form-inline").on("ajax:success", (e, data, status, xhr) ->
-    # todo
+    startAt = new Date($('#from').val())
+    endsAt = new Date($('#to').val())
+    $('.list-group .list-group-item').each ->
+      ba = new Date($(this).find('.begins').text())
+      ea = new Date($(this).find('.ends').text())
+      if(startAt >= ba && endsAt <= ea)
+        $(this).addClass('active')
   ).on "ajax:error", (e, xhr, status, error) ->
     alert('Please fill in all fields')
 
   $(document).on 'keyup', '#min', (e) ->
     $('#max').val($(this).val())
-    $('#from').trigger('change');
+    if($('#from').val() != '')
+      $('#from').trigger('change')
 
   $(document).on 'change', '#from', (e) ->
     if($('#min').val() > 0 && $('#min').val() == $('#max').val())

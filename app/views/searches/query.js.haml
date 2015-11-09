@@ -1,2 +1,2 @@
 :plain
-  alert("#{h params['q']}");
+  $(".list-group").html("#{escape_javascript(render @places)}");
