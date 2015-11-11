@@ -1,5 +1,7 @@
 BOSearch
 ================
+[![Code Climate](https://codeclimate.com/github/PB/BOSearch/badges/gpa.svg)](https://codeclimate.com/github/PB/BOSearch)
+[![Test Coverage](https://codeclimate.com/github/PB/BOSearch/badges/coverage.svg)](https://codeclimate.com/github/PB/BOSearch/coverage)
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
